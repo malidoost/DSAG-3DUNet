@@ -3,7 +3,7 @@ Deeply Supervised Attention-Gated 3D U-Net for Brain Vasculature
 
 ## Overview
 
-Cerebrovascular disease is a leading cause of death worldwide. Accurate blood vessel segmentation is a crucial step in diagnosing and treating these conditions. **DSAG-3DUNet** contains the code for our research presented in the paper titled "**Model utility of a deep learning-based segmentation is not Dice coefficient dependent: A case study in volumetric brain blood vessel segmentation**". We employed a deeply supervised attention-gated 3D U-Net, trained with the Focal Tversky loss function, to extract brain vasculature from volumetric magnetic resonance angiography (MRA) images. We developed our code based on the code that was shared in the publication by [*Isensee et al.*]([https://link.springer.com/chapter/10.1007/978-3-319-75238-9_25]) in 2018.
+Cerebrovascular disease is a leading cause of death worldwide. Accurate blood vessel segmentation is a crucial step in diagnosing and treating these conditions. **DSAG-3DUNet** contains the code for our research presented in the paper titled "**Model utility of a deep learning-based segmentation is not Dice coefficient dependent: A case study in volumetric brain blood vessel segmentation**". We employed a deeply supervised attention-gated 3D U-Net, trained with the Focal Tversky loss function, to extract brain vasculature from volumetric magnetic resonance angiography (MRA) images. We developed our code based on the code that was shared in the publication by [**Isensee et al.**]([https://link.springer.com/chapter/10.1007/978-3-319-75238-9_25]) in 2018.
 
 This repository contains code for the following aspects of our research:
 
