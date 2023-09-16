@@ -19,7 +19,7 @@ The segmentation code, **c_segment.py**, in this repository, is used to train a 
 - If the batch size is reduced to 1 and you are still running out of memory, you can also try changing the patch size to "(32, 32, 32)".
 - Keep in mind that smaller patch sizes may not perform as well as larger patch sizes.
 
-# Inputs & Outputs:
+### Inputs & Outputs:
 - Place all the data in the ./data directory. Each case needs to be in a folder including the image 'mra' and the label "truth" both in NIFTI (.nii) format.
 - You need to change the hyperparameters only in **c_segment.py**.
 - To run different network structures, comment and uncomment the lines in the "instantiate new model" section in **c_segment.py**.
