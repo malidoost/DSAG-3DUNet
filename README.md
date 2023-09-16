@@ -1,11 +1,43 @@
 # DSAG-3DUNet
 Deeply Supervised Attention-Gated 3D U-Net for Brain Vasculature
 
-# ToxPathEngine
-
 ## Overview
 
-This repository, **ToxPathEngine**, contains the code and associated resources for the research presented in the manuscript titled "**Preclinical Side Effect Prediction through Pathway Engineering of Protein Interaction Network Models**". The research focuses on enhancing drug side effect predictions using protein interaction networks and pathway engineering, by including key pathway genes and omics data measurements. **ToxPathEngine** uses another tool called [**PathFX**](https://github.com/jenwilson521/PathFX), which is a protein-protein interaction tool. **ToxPathEngine** can identify distinct pathways, define novel gene pathways, and generate PathFX results using those new pathways along with the side effect evaluation metrics.
+Cerebrovascular disease is a leading cause of death worldwide. Accurate blood vessel segmentation is a crucial step in diagnosing and treating these conditions. **DSAG-3DUNet** contains the code for our research presented in the paper titled "**Model utility of a deep learning-based segmentation is not Dice coefficient dependent: A case study in volumetric brain blood vessel segmentation**". We employed a deeply supervised attention-gated 3D U-Net, trained with the Focal Tversky loss function, to extract brain vasculature from volumetric magnetic resonance angiography (MRA) images.
+
+This repository contains code for the following aspects of our research:
+
+- [Segmentation Code](#segmentation-code): Code for training the deep learning model for brain blood vessel segmentation.
+- [Prediction Code](#prediction-code): Code for making predictions using the trained model.
+- [Evaluation Code](#evaluation-code): Code for evaluating the model's performance.
+
+## Segmentation Code
+
+The segmentation code in this repository is used to train a deeply supervised attention-gated 3D U-Net with the Focal Tversky loss function for brain blood vessel segmentation. You can find the code in the [segmentation folder](segmentation/). To run the segmentation code, follow the instructions provided in the respective README within the folder.
+
+## Prediction Code
+
+The prediction code allows you to use the trained model to make predictions on new volumetric MRA images. You can find the code in the [prediction folder](prediction/). To use the prediction code, follow the instructions provided in the respective README within the folder.
+
+## Evaluation Code
+
+Evaluating the model's performance is crucial in medical image analysis. The evaluation code provided in the [evaluation folder](evaluation/) helps you assess the segmentation results. Refer to the README within the folder for usage instructions.
+
+### Usage Instructions
+
+1. Clone this repository to your local machine:
+
+
+
+## Citation
+
+If you use this code or the associated research in your work, please consider citing our manuscript:
+
+Alidoost, M., Ghodrati, V., Ahmadian, A., Shafiee, A., Hassani, C. H., Bedayat, A., & Wilson, J. L. (2023). Model utility of a deep learning-based segmentation is not Dice coefficient dependent: A case study in volumetric brain blood vessel segmentation. *Intelligence-Based Medicine*, 7, 100092.
+
+
+
+
 
 ## Table of Contents
 
@@ -40,11 +72,4 @@ Detailed instructions on how to use the code:
    - "evalnewpath_scr.py": Evaluate (the novel defined) pathways per side effect and their corresponding phenotypes and produce the evaluation plots.
 - Important Note: Make sure to update the directory paths in all scripts to match your local environment before running them.
 - You can find the PathFX outcome for the drug Alteplase, as an example, in the "pathfx/results/" directory, which represents our final analysis results.
-
-## Citation
-
-If you use this code or the associated research in your work, please consider citing our manuscript:
-
-Alidoost, Mohammadali and Wilson, L. Jennifer, "Preclinical Side Effect Prediction through Pathway Engineering of Protein Interaction Network Models", In Preparation.
-
 
